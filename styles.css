@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-size: 16px; /*Tamanho padrão da fonte em todo o site*/
+  font-size: 16px;
 }
 
 ::-webkit-scrollbar {
@@ -46,7 +46,7 @@ nav {
   grid-area: timeline;
 
   overflow-y: scroll;
-  animation: entering 0.7s ease-in-out; /*Define a animação usada*/
+  animation: entering 0.7s ease-in-out;
 }
 
 .memory {
@@ -74,7 +74,7 @@ nav {
   object-fit: cover;
   border-radius: 8px;
 
-  transition: transform 0.3s ease-in-out; /*Aplica a transição na propriedade modificada, nesse caso "transform"*/
+  transition: transform 0.3s ease-in-out;
 }
 
 .thumb {
@@ -85,7 +85,6 @@ nav {
 }
 
 .thumb:hover img {
-  /*Ao passar com o mouse, modificar a tag img da classe memory*/
   transform: scale(1.1);
 }
 
@@ -124,15 +123,12 @@ aside {
 }
 
 aside * {
-  /*Seleciona todos os elementos dentro da tag <aside>*/
-  animation: entering 0.7s ease-in-out; /*Define a animação usada*/
+  animation: entering 0.7s ease-in-out;
 }
 
 .social {
   height: 42px;
   padding-bottom: 8px;
-  /*padding-left: 5px;
-  padding-right: 5px;*/
 }
 
 #socialbadges {
@@ -140,14 +136,8 @@ aside * {
   flex-direction: column;
   align-items: center;
 }
-/*#profilepic {
-  max-width: 20%;
-  border-radius: 50%;
-  overflow: hidden;
-}*/
 
 aside #profilepic {
-  /*Seleciona a seguinda child do elemento aside*/
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -172,7 +162,6 @@ aside span {
 }
 
 @media (max-width: 768px) {
-  /*Estilo que será usado em telas com largura de até 768px*/
   :root {
     font-size: 14px;
   }
